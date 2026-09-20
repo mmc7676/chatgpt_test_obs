@@ -1,0 +1,27 @@
+{
+  "name": "maxey0-observability-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:client": "vite",
+    "dev:server": "tsx server/index.ts",
+    "build": "vite build",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.18.0",
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "latest",
+    "express": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "tsx": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
